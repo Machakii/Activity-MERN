@@ -1,0 +1,231 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e0f2fe, #e9d5ff, #f0f9ff);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 1600px;
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  min-width: 600px;
+}
+
+
+.app-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #4338ca;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.login-form input {
+  padding: 1rem 1.2rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  transition: all 0.2s ease-in-out;
+  background-color: #f9fafb;
+  color: black;
+}
+
+.login-form input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  outline: none;
+}
+
+.login-form button {
+  padding: 1rem 1.2rem;
+  background-color: #6366f1;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #4f46e5;
+}
+
+.register-text {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: #475569;
+}
+
+.register-text a {
+  color: #6366f1;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
+
+.library-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: linear-gradient(135deg, #e0f2fe, #e9d5ff, #f0f9ff);
+}
+
+.library-card {
+  width: 90%;
+  max-width: 1600px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 3rem 4rem;
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+.library-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  padding: 2rem;
+  background: #f8fafc;
+  border-radius: 16px;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.library-left .app-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #4338ca;
+  margin-bottom: 1rem;
+}
+
+.welcome-text {
+  font-size: 1.2rem;
+  color: #475569;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 1.4rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #dc2626;
+}
+
+.library-right {
+  flex: 2;
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.library-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.library-header h2 {
+  font-size: 1.6rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+.add-btn {
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.add-btn:hover {
+  background-color: #4f46e5;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.book-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.book-item span {
+  font-weight: 500;
+  color: #334155;
+}
+
+.view-btn {
+  background-color: #a78bfa;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.view-btn:hover {
+  background-color: #8b5cf6;
+}

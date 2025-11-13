@@ -5,6 +5,7 @@ const connectDb = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const adminRoutes = require('./routes/adminRoutes');
 const createSampleAdmin = require('./utils/createSampleAdmin');
+const bookRoutes = require('./routes/bookRoutes');
 
 dotenv.config();
 connectDb();
@@ -15,6 +16,7 @@ app.use(express.json());
 
 app.use('/api/auth', authRoutes);
 app.use('/api/admin-only', adminRoutes);
+app.use('/api/book', bookRoutes);
 
 // create sample admin on startup
 createSampleAdmin();
