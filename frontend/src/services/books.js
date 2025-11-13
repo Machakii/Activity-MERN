@@ -22,5 +22,5 @@ export default function useBooks() {
     fetchBooks();
   }, []);
 
-  return { books, loading };
+  return { books, setBooks, loading };
 }
